@@ -50,7 +50,7 @@ const QuestionCard = ({ questionData, index, onSubmit }) => {
             className={`px-4 py-2 rounded-md border transition-all duration-200 
               ${
                 selected === opt
-                  ? "bg-purple-600 text-white"
+                  ? "bg-green-500 text-white"
                   : "bg-purple-100 dark:bg-purple-700 text-black dark:text-white hover:bg-purple-200 dark:hover:bg-purple-600"
               }`}
           >
