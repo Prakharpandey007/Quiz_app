@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useQuiz } from "../context/QuizContext";
 import { useNavigate } from "react-router-dom";
 import QuestionCard from "./QuestionCard";
-import OverviewPanel from "./OverviewPanel";
+import OverviewPanel from "./OverViewPanel";
 
 const QuizPage = () => {
   const { questions, answers, setAnswers, visited, setVisited, setTimeLeft, timeLeft } = useQuiz();
