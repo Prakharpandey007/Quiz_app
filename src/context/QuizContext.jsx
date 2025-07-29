@@ -11,7 +11,7 @@ export const QuizProvider = ({ children }) => {
   const [visited, setVisited] = useState([]);
   const [startTime, setStartTime] = useState(null);
   const [timeLeft, setTimeLeft] = useState(1800); // 30 minutes in seconds
-
+   const [flagged, setFlagged] = useState([]);
   return (
     <QuizContext.Provider
       value={{
@@ -26,7 +26,10 @@ export const QuizProvider = ({ children }) => {
         startTime,
         setStartTime,
         timeLeft,
-        setTimeLeft
+        setTimeLeft,
+        flagged,
+        setFlagged
+        
       }}
     >
       {children}

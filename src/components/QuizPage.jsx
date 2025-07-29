@@ -34,7 +34,7 @@ const QuizPage = () => {
       <div className="w-full lg:w-3/4 p-6">
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-lg font-bold text-purple-800">Time Left: {Math.floor(timeLeft/60)}:{String(timeLeft%60).padStart(2,'0')}</h2>
-          <button onClick={() => navigate("/result")} className="bg-red-500 text-white px-4 py-1 rounded-md">Submit Quiz</button>
+          <button onClick={() => navigate("/review")} className="bg-red-500 text-white px-4 py-1 rounded-md">Review & Submit</button>
         </div>
         <QuestionCard
   questionData={questions[currIndex]}
